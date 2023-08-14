@@ -1,12 +1,12 @@
 import React from 'react';
-// import blogPosts from '/public/data/blogData.json';
-import getBlogPosts from '../api/getBlogPosts';
+import blogPosts from '/public/data/blogData.json';
 import Link from 'next/link';
+// import getBlogPosts from '../api/getBlogPosts';
 
 const Blogs = async () => {
     // no need to use the useEffect() hook because this is a server component.
-    const blogPosts = await getBlogPosts();
-    console.log("all the blog post are : ", blogPosts);
+    /* const blogPosts = await getBlogPosts();
+    console.log("all the blog post are : ", blogPosts); */
 
     return (
         <div className='mx-12'>
